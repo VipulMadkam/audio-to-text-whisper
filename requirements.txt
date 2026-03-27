@@ -1,0 +1,4 @@
+speechrecognition
+openai-whisper
+ffmpeg-python
+torch
