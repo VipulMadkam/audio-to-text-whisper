@@ -10,10 +10,10 @@ import ffmpeg
 recognizer = sr.Recognizer()
 #warnings.filterwarnings("ignore",category=FutureWarning)   #uncomment this line if too unnecessary Warnings
 
-
+input_path = r"input.wav"
 
 # Convert to 16kHz mono (better for speech recognition)
-ffmpeg.input(r"file_path)\
+ffmpeg.input(input_path)\
       .output("processed.wav", ar=16000, ac=1)\
       .overwrite_output()\
       .run(quiet=True)
