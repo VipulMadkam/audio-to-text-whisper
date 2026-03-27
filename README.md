@@ -40,6 +40,42 @@ Chatbot/
 │── requirements.txt
 │── README.md
 ```
+## 🚀 Why this project?
+
+This project is a foundational step toward building a voice assistant system (Jarvis-like). It demonstrates how raw audio can be processed and converted into meaningful text using modern AI models.
+
+---
+
+## 🎧 Input
+
+Place your audio file at:
+C:\Users\yourpath\output1.wav
+
+Or update the file path inside the script.
+
+---
+
+## 📤 Output
+
+The program generates:
+- processed.wav (cleaned audio)
+- Transcribed text printed in terminal
+  
+---
+
+## 🧠 Model Details
+
+This project uses OpenAI Whisper, a transformer-based speech recognition model capable of multilingual transcription and translation. :contentReference[oaicite:1]{index=1}
+
+---
+
+## 🛣️ Roadmap
+
+- [x] Audio preprocessing using FFmpeg
+- [x] Speech-to-text using Whisper
+- [ ] Real-time microphone input
+- [ ] AI response system (LLM integration)
+- [ ] Text-to-speech output
 
 ---
 
