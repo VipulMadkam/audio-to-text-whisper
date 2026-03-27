@@ -13,7 +13,7 @@ recognizer = sr.Recognizer()
 
 
 # Convert to 16kHz mono (better for speech recognition)
-ffmpeg.input(r"C:\Users\vipul\output1.wav")\
+ffmpeg.input(r"file_path)\
       .output("processed.wav", ar=16000, ac=1)\
       .overwrite_output()\
       .run(quiet=True)
