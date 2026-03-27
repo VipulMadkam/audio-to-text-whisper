@@ -2,7 +2,11 @@ import speech_recognition as sr
 import warnings
 import whisper
 import ffmpeg
+import os
 
+if not os.path.exists("input.wav"):
+    print("Error: input file not found")
+    exit()
 
 
 
@@ -11,7 +15,10 @@ recognizer = sr.Recognizer()
 #warnings.filterwarnings("ignore",category=FutureWarning)   #uncomment this line if too unnecessary Warnings
 
 input_path = r"input.wav"
-
+if not os.path.exists("input.wav"):
+    print("Error: input file not found")
+    exit()
+      
 # Convert to 16kHz mono (better for speech recognition)
 ffmpeg.input(input_path)\
       .output("processed.wav", ar=16000, ac=1)\
