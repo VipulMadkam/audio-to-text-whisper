@@ -12,7 +12,7 @@ if not os.path.exists("input.wav"):
 
 #Initialize recognizer
 recognizer = sr.Recognizer()
-#warnings.filterwarnings("ignore",category=FutureWarning)   #uncomment this line if too unnecessary Warnings
+#warnings.filterwarnings("ignore",category=FutureWarning)   #uncomment this line if too many unnecessary Warnings
 
 input_path = r"input.wav"
 if not os.path.exists("input.wav"):
