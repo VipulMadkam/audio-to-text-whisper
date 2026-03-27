@@ -48,7 +48,7 @@ Chatbot/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/audio-to-text-whisper.git
+git clone https://github.com/VipulMadkam/audio-to-text-whisper.git
 cd audio-to-text-whisper
 ```
 
